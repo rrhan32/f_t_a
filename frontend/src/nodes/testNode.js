@@ -6,6 +6,17 @@ export const testNode = () => {
   return (
     <BaseNode
         title="Test Node"
+        style={{
+            backgroundColor:" #e74c3c",
+            padding: "20px",
+            borderRadius: "4px",
+            color: "white",
+            fontWeight: "bold",
+            resize: "both",
+            overflow: "auto",
+            minHeight: "50px",
+            minWidth: "100px",
+        }}
         formFields={[
             {
             label: 'Test Input:',
