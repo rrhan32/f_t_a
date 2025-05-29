@@ -7,7 +7,7 @@ import { useAutosizeTextArea } from './useAutosizeTextArea';
 
 
 export const TextNode = ({ id, data }) => {
-  const [currText, setCurrText] = useState(data?.text || '');
+  const [currText, setCurrText] = useState(data?.text || '{{input}}');
   const textRef = useRef(null);
 
   
