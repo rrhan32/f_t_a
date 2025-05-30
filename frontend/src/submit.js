@@ -1,6 +1,7 @@
 // submit.js
 import { useStore } from './store'; // Assuming you’re using Zustand or similar
 import { shallow } from 'zustand/shallow';
+import Button from '@mui/material/Button';
 
 const selector = (state) => ({
   nodes: state.nodes,
@@ -39,7 +40,7 @@ export const SubmitButton = () => {
 
     return (
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <button type="submit" onClick={handleSubmit}>Submit</button>
+            <Button variant="contained" color='success' type="submit" onClick={handleSubmit}>Submit</Button>
         </div>
     );
 }
