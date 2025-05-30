@@ -41,7 +41,8 @@ export const TextNode = ({ id, data }) => {
   ...variables.map((v, i) => ({
     type: 'target',
     position: Position.Left,
-    id: `${id}-value`,
+    id: `${id}-value-${v}`,
+    top: `${(i + 1) * 30}px`,  // spacing out handles vertically
   })),
 ];
 
