@@ -1,34 +1,30 @@
 // llmNode.js
+import { Position } from 'reactflow';
+import { BaseNode } from './baseNode';
 
-import { Handle, Position } from 'reactflow';
-
-export const LLMNode = ({ id, data }) => {
-
+export const LLMNode = ({ id }) => {
   return (
-    <div style={{width: 200, height: 80, border: '1px solid black'}}>
-      <Handle
-        type="target"
-        position={Position.Left}
-        id={`${id}-system`}
-        style={{top: `${100/3}%`}}
-      />
-      <Handle
-        type="target"
-        position={Position.Left}
-        id={`${id}-prompt`}
-        style={{top: `${200/3}%`}}
-      />
-      <div>
-        <span>LLM</span>
-      </div>
-      <div>
-        <span>This is a LLM.</span>
-      </div>
-      <Handle
-        type="source"
-        position={Position.Right}
-        id={`${id}-response`}
-      />
-    </div>
+    <BaseNode
+      title="LLM"
+      style={{
+        backgroundColor:" ",
+            padding: "20px",
+            borderRadius: "4px",
+            color: "white",
+            fontWeight: "bold",
+            resize: "both",
+            overflow: "auto",
+            minHeight: "50px",
+            minWidth: "100px",
+      }}
+      formFields={[
+        { label: '', element: <span>This is a LLM.</span> },
+      ]}
+      handles={[
+        { type: 'target', position: Position.Left, id: `${id}-system`, top: '33%' },
+        { type: 'target', position: Position.Left, id: `${id}-prompt`, top: '66%' },
+        { type: 'source', position: Position.Right, id: `${id}-response` },
+      ]}
+    />
   );
-}
+};
