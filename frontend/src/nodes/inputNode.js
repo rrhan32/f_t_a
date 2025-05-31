@@ -11,7 +11,7 @@ export const InputNode = ({ id, data }) => {
     <BaseNode
       title="Input"
       style={{
-        backgroundColor:" #e74c3c",
+        backgroundColor:" ",
             padding: "20px",
             borderRadius: "4px",
             color: "white",

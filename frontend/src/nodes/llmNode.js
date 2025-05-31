@@ -7,7 +7,7 @@ export const LLMNode = ({ id }) => {
     <BaseNode
       title="LLM"
       style={{
-        backgroundColor:" #e74c3c",
+        backgroundColor:" ",
             padding: "20px",
             borderRadius: "4px",
             color: "white",
