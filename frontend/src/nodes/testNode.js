@@ -7,7 +7,7 @@ export const testNode = () => {
     <BaseNode
         title="Test Node"
         style={{
-            backgroundColor:" #e74c3c",
+            backgroundColor:" ",
             padding: "20px",
             borderRadius: "4px",
             color: "white",
